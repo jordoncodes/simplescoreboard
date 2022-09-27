@@ -1,0 +1,15 @@
+# this uses the skBee addon (and ticker for the TPS)
+
+on join:
+    toggle player's scoreboard on
+    set {uniqueJoins} to size of all offline players
+    set {_tps} to first element of tps
+    while player is online:
+        set title of player's scoreboard to "&bflexed lol"
+        set line 15 of player's scoreboard to "&bHealth&7: &3%player's health% ♥"
+        set line 14 of player's scoreboard to "&bTPS&7: &3%{_tps}%"
+        set line 13 of player's scoreboard to "&bJoins&7: &3%{uniqueJoins}%"
+        set line 12 of player's scoreboard to "&bOnline players&7: &3%number of all players%"
+        set line 11 of player's scoreboard to "wow, such a good sb"
+        wait 5 seconds
+        # 5 second loop

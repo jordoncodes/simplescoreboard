@@ -1,0 +1,6 @@
+name: SimpleScoreboard
+version: '${project.version}'
+main: me.itzjordon.simplescoreboard.SimpleScoreboard
+api-version: 1.17
+authors: [ itzjordon ]
+description: Simple scoreboard plugin!
